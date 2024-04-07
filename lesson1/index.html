@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log('1. script from head tag');
+        console.log('2. document from head tag');
+        console.log('3. window from head tag');
+        console.log('4. globalThis from head tag');
+    </script>
+    <!-- BAD PRACTICE to load scripts in head tag IN MOST CASES -->
+    <script src="./header.js"></script>
+</head>
+<body>
+    
+    <h1>Hello World</h1>
+
+
+
+    <script>
+        console.log('1. script from script tag');
+        console.log('2. document from script tag');
+        console.log('3. window from script tag');
+        console.log('4. globalThis from script tag');
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html> 
