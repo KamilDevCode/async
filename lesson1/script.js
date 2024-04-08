@@ -13,3 +13,22 @@ console.log(typeof x)
 
 const h1 = document.querySelector('h1')
 console.log(h1) // returns h1 element because script is loaded 
+
+// CALL STACK co to jest ?
+
+const sayHello = () => {
+
+    return `Hello ${getFirstName()} ${getLastName()}`
+}
+
+const getFirstName = () => "Kamil"
+const getLastName = () => 'Lewandowski'
+
+console.log(sayHello())
+
+console.log('Hi')
+for(let i = 0; i < 1000; i++) {
+    console.log('Hello from for loop')
+    console.log('Hello from for loop')
+}
+console.log('Bye')
